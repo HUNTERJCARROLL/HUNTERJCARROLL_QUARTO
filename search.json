@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "HUNTERJCARROLL",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "Course_Notes/Applied_Linear_Algebra/Module_1.html",
+    "href": "Course_Notes/Applied_Linear_Algebra/Module_1.html",
+    "title": "LEcture 1",
+    "section": "",
+    "text": "LEcture 1\nß why no workßß"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -7,10 +21,10 @@
     "text": "About this site"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "HUNTERJCARROLL_QUARTO",
+    "objectID": "Course_Notes/Numerical_Analysis/Module_1.html",
+    "href": "Course_Notes/Numerical_Analysis/Module_1.html",
+    "title": "Lecture 2",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Lecture 2"
   }
 ]
