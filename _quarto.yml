@@ -18,6 +18,11 @@ website:
             text: Numerical Analysis
       - href: cv.qmd
         text: CV
+
+      - text: "Teaching"
+        menu:
+          - href: teaching/MATH1110.qmd
+
       - href: about.qmd
         text: About
     right:
