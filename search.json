@@ -7,11 +7,11 @@
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
-    "objectID": "Course_Notes/Applied_Linear_Algebra/Module_1.html",
-    "href": "Course_Notes/Applied_Linear_Algebra/Module_1.html",
-    "title": "LEcture 1",
+    "objectID": "Course_Notes/Numerical_Analysis/Module_1.html",
+    "href": "Course_Notes/Numerical_Analysis/Module_1.html",
+    "title": "Lecture 2",
     "section": "",
-    "text": "LEcture 1\nß why no workßß"
+    "text": "Lecture 2"
   },
   {
     "objectID": "about.html",
@@ -21,17 +21,17 @@
     "text": "About this site"
   },
   {
+    "objectID": "Course_Notes/Applied_Linear_Algebra/Module_1.html",
+    "href": "Course_Notes/Applied_Linear_Algebra/Module_1.html",
+    "title": "LEcture 1",
+    "section": "",
+    "text": "LEcture 1\nß why no workßß"
+  },
+  {
     "objectID": "teaching/MATH1110.html",
     "href": "teaching/MATH1110.html",
     "title": "Hunter Carroll",
     "section": "",
-    "text": "This is college algebra recitation"
-  },
-  {
-    "objectID": "Course_Notes/Numerical_Analysis/Module_1.html",
-    "href": "Course_Notes/Numerical_Analysis/Module_1.html",
-    "title": "Lecture 2",
-    "section": "",
-    "text": "Lecture 2"
+    "text": "This is college algebra recitation\nWeek 1: Recitation Slides (PDF)"
   }
 ]
