@@ -1,21 +1,35 @@
 project:
   type: website
+  output-dir: _site
 
 website:
-  title: "HUNTERJCARROLL_QUARTO"
+  title: "Hunter Carroll"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: research.qmd
+        text: Research
+      - text: "Course Work"
+        menu:
+          - href: Course_Notes/Applied_Linear_Algebra/Module_1.qmd
+            text: Applied Linear Algebra
+          - href: Course_Notes/Numerical_Analysis/Module_1.qmd
+            text: Numerical Analysis
+      - href: cv.qmd
+        text: CV
+      - href: about.qmd
+        text: About
+    right:
+      - icon: github
+        href: https://github.com/HUNTERJCARROLL
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: cosmo
     css: styles.css
     toc: true
 
+bibliography: references.bib
 
 
