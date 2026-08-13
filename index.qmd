@@ -1,5 +1,5 @@
 ---
-title: "HUNTERJCARROLL_QUARTO"
+title: "HUNTERJCARROLL"
 ---
 
 This is a Quarto website.
