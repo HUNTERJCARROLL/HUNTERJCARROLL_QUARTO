@@ -1,7 +1,32 @@
 ---
-title: "HUNTERJCARROLL"
----
+title: "Hunter Carroll"
+image: images/Hunter_C_Headshot.jpeg
+about:
+  template: trestles
+  image-shape: round
+  image-width: 15rem
+  id: ppc
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:Hunter.Carroll@ucdenver.edu
+    - icon: github
+      text: GitHub
+      href: https://github.com/HUNTERJCARROLL
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/hunter-carroll-711b18191/
 
-This is a Quarto website.
+:::{#ppc}
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+My name is Hunter Carroll, and I am a Ph.D. student in Applied Mathematics at the University of Colorado Denver.
+
+## Education
+
+I am currently pursuing my Ph.D. in Applied Mathematics at the University of Colorado Denver, with research interests spanning applied analysis, linear algebra, and computational methods.
+
+## Current Work
+
+I am completing a data science internship at Donor Alliance, an organ and tissue donation organization, where I work on clinical NLP pipelines and predictive modeling for organ procurement referrals. I also teach MATH 1110 (College Algebra Recitation) at CU Denver.
+
+:::
