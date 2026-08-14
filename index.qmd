@@ -16,6 +16,7 @@ about:
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/hunter-carroll-711b18191/
+---
 
 :::{#ppc}
 
