@@ -1,10 +1,10 @@
-This is college algebra recitation
+# MATH 1110 - R03 and R04 (College Algebra Recitation)
 
-Week 1: 
+# Week 1: 
 
-Week 1 Overview: This week we will be working on problems related to factoring and the quadratic equation. 
+*Week 1 Overview:* This week we will be working on problems related to factoring and the quadratic equation. 
 
-Resources:
+*Resources:*
 
 * [Recitation Slides (PDF)](Week_1_Recitation.pdf)
 * [Factoring Review Tactivity](Factoring Review Tactivity.pdf)
