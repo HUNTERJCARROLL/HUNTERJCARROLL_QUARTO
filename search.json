@@ -21,11 +21,11 @@
     "text": "I am completing a data science internship at Donor Alliance, an organ and tissue donation organization, where I work on clinical NLP pipelines and predictive modeling for organ procurement referrals. I also teach MATH 1110 (College Algebra Recitation) at CU Denver."
   },
   {
-    "objectID": "Course_Notes/Applied_Linear_Algebra/Module_1.html",
-    "href": "Course_Notes/Applied_Linear_Algebra/Module_1.html",
-    "title": "Applied Linear Algebra Fall 2026 - University of Colorado Denver",
+    "objectID": "Course_Notes/Numerical_Analysis/Module_1.html",
+    "href": "Course_Notes/Numerical_Analysis/Module_1.html",
+    "title": "Lecture 2",
     "section": "",
-    "text": "Applied Linear Algebra Fall 2026 - University of Colorado Denver\nThis is a prelim prep course.\n\n\nModule 1\nIn the first portion of the semester we are covering vector spaces."
+    "text": "Lecture 2"
   },
   {
     "objectID": "about.html",
@@ -35,17 +35,17 @@
     "text": "About this site"
   },
   {
+    "objectID": "Course_Notes/Applied_Linear_Algebra/Module_1.html",
+    "href": "Course_Notes/Applied_Linear_Algebra/Module_1.html",
+    "title": "Applied Linear Algebra Fall 2026 - University of Colorado Denver",
+    "section": "",
+    "text": "Applied Linear Algebra Fall 2026 - University of Colorado Denver\nThis is a prelim prep course.\n\n\nModule 1\nIn the first portion of the semester we are covering vector spaces."
+  },
+  {
     "objectID": "teaching/MATH1110.html",
     "href": "teaching/MATH1110.html",
     "title": "Hunter Carroll",
     "section": "",
-    "text": "This is college algebra recitation\nWeek 1: Recitation Slides (PDF)"
-  },
-  {
-    "objectID": "Course_Notes/Numerical_Analysis/Module_1.html",
-    "href": "Course_Notes/Numerical_Analysis/Module_1.html",
-    "title": "Lecture 2",
-    "section": "",
-    "text": "Lecture 2"
+    "text": "This is college algebra recitation\nWeek 1:\nWeek 1 Overview: This week we will be working on problems related to factoring and the quadratic equation.\nResources:\n\nRecitation Slides (PDF)\nFactoring Review Tactivity\nReview Factoring Two Truths and a Lie"
   }
 ]
