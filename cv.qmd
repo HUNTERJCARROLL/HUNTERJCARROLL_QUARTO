@@ -1,0 +1,221 @@
+---
+title: "Curriculum Vitae"
+format:
+  html:
+    toc: false
+    page-layout: full
+---
+
+# Hunter Carroll
+
+Denver, Colorado  
+[Hunter.Carroll@ucdenver.edu](mailto:Hunter.Carroll@ucdenver.edu)  
+[LinkedIn](https://www.linkedin.com/in/hunter-carroll-711b18191) | 
+[GitHub](https://github.com/HUNTERJCARROLL)
+
+## Profile
+
+Applied Mathematics PhD student at the University of Colorado Denver with experience in machine learning, statistical modeling, clinical natural language processing, high-performance computing, and mathematical research. Develops reproducible end-to-end data science systems spanning SQL data extraction, feature engineering, predictive modeling, model evaluation, operational ranking, and deployment-oriented monitoring.
+
+Research interests include machine learning, neural networks, nonlinear and complex systems, representation learning, and the mathematical foundations of artificial intelligence. Experienced communicating technical results to researchers, operational stakeholders, students, and interdisciplinary teams.
+
+## Education
+
+### University of Colorado Denver
+**Ph.D. in Applied Mathematics, In Progress**  
+Denver, Colorado
+
+- Research interests: machine learning, neural networks, nonlinear systems, complex systems, and mathematical foundations of artificial intelligence.
+- Graduate study in applied mathematics and computational methods.
+
+### California State University, Long Beach
+**Graduate Study in Applied Mathematics**  
+Long Beach, California | 2025--2026
+
+- Graduate coursework in applied mathematics.
+- Teaching Assistant.
+- GPA: 4.0.
+
+### University of Colorado Denver
+**B.S. in Applied Mathematics, Cum Laude**  
+Denver, Colorado | 2020--2024
+
+- GPA: 3.89.
+
+## Experience
+
+### Donor Alliance
+**Data Science Intern**  
+Denver, Colorado | Summer 2026
+
+- Developed an end-to-end machine learning framework for predicting the probability of near-term onsite involvement from longitudinal organ-donation referral data, integrating structured clinical variables with free-text clinical documentation.
+- Constructed a leakage-aware historical modeling dataset from SQL Server referral records using event-time feature engineering, clinical data cleaning, documentation auditing, and temporally defined prediction targets.
+- Designed a referral-disjoint temporal evaluation framework using a 70% training, 15% validation, and 15% held-out test split to approximate prospective deployment on future referrals.
+- Established operational baselines using global prevalence, hospital-level historical demand, and hierarchical hospital--shift--hour demand with validation-selected smoothing.
+- Developed and compared structured logistic regression, frozen Bio_ClinicalBERT text models, combined structured-plus-text logistic regression, and fine-tuned multimodal ClinicalBERT architectures.
+- Built a Combined Logistic Regression model integrating standardized structured features with PCA-reduced Bio_ClinicalBERT embeddings for lightweight deployment and active-referral scoring.
+- Fine-tuned a multimodal ClinicalBERT model using separate structured and narrative encoders with attention-based modality fusion, staged transformer fine-tuning, early stopping, and validation-based model selection.
+- Achieved held-out performance of **AUROC 0.827 and AUPRC 0.524** with the fine-tuned multimodal model, compared with **AUROC 0.784 and AUPRC 0.465** for the lightweight Combined Logistic Regression model.
+- Developed retrospective active-referral ranking analyses using Precision@K, Recall@K, Lift@K, and NDCG@K to evaluate model performance under realistic staffing constraints.
+- Built a deployment-oriented Python repository integrating SQL queries, shared preprocessing, ClinicalBERT embeddings, logistic-regression training, model artifact persistence, active referral scoring, and capacity-aware staff ranking.
+- Developed technical documentation, model monitoring recommendations, and a prospective shadow-evaluation strategy for assessing discrimination, calibration, ranking performance, and model drift over time.
+- Presented technical methods and operational findings using reproducible visualizations, mathematical explanations, and decision-focused reporting for interdisciplinary stakeholders.
+
+### California State University, Long Beach
+**Teaching Assistant**  
+Long Beach, California | August 2025--2026
+
+- Supported instruction in quantitative coursework and communicated mathematical concepts to students with varied technical backgrounds.
+- Analyzed performance patterns across more than 130 students in two course sections to identify learning gaps and provide targeted academic support.
+- Managed simultaneous support for multiple student groups while providing consistent technical feedback and problem-solving guidance.
+- Collaborated with faculty on course objectives, instructional delivery, and student outcomes.
+
+### University of Colorado Denver
+**Student Researcher**  
+Denver, Colorado | August 2024--May 2025
+
+- Developed analytical models and computational simulations for studying complex-system behavior across more than 1,000 simulation runs.
+- Designed computational workflows for large parameter sweeps involving more than 50 variables and analyzed resulting relationships and system behavior.
+- Applied mathematical and computational methods to investigate nonlinear model dynamics and high-dimensional parameter spaces.
+- Delivered weekly research updates over six months, translating mathematical results into interpretable findings and next-step recommendations.
+- Collaborated with interdisciplinary teams of approximately 5--8 members and communicated advanced mathematical concepts to technical and non-technical audiences.
+
+### University of California, Los Angeles
+**Student Researcher**  
+Los Angeles, California | May 2023--August 2024
+
+- Developed machine learning pipelines for preprocessing and analyzing high-dimensional biological datasets containing approximately \(10^4\)--\(10^5\) features and \(10^3\)--\(10^4\) samples.
+- Designed and implemented Gaussian Mixture Variational Autoencoder (GMVAE) models using TensorFlow/Keras with latent dimensions of 10--50 and experiments across 5--10 mixture components.
+- Used dimensionality reduction and representation-learning methods to investigate structure in high-dimensional biological data.
+- Executed and managed large-scale machine learning experiments on UCLA's Hoffman2 high-performance computing cluster using Linux, batch scheduling, and resource allocation.
+- Built reproducible computational workflows using version-controlled code, fixed random seeds, saved model configurations, and systematic experiment tracking.
+- Presented research to more than 100 researchers at the Bruins in Genomics Symposium.
+- Produced technical documentation supporting continued development and reproducibility of the research pipeline.
+
+## Selected Projects
+
+### Near-Term Referral Prioritization with Multimodal Clinical Machine Learning
+
+Developed during the Donor Alliance Data Science Internship.
+
+- Designed an event-level prediction framework for estimating:
+  
+  \[
+  P(\text{first relevant onsite involvement within 8 hours})
+  \]
+
+  using only information available at the historical prediction time.
+- Integrated clinical laboratory values, physiologic measurements, referral characteristics, workflow variables, temporal features, and sanitized clinical narrative.
+- Used Bio_ClinicalBERT to construct contextual clinical-text representations.
+- Evaluated structured-only, text-only, combined logistic-regression, and fine-tuned multimodal architectures.
+- Developed capacity-aware ranking methods that convert probabilities into operational priority lists for the top \(K\) active referrals.
+- Designed retrospective decision-time replay and prospective monitoring strategies for evaluating real-world ranking performance.
+
+### Combined Logistic Regression Deployment Pipeline
+
+- Built a modular Python repository for training and deploying a multimodal logistic-regression referral-ranking model.
+- Integrated SQL Server data extraction through SQLAlchemy and `pyodbc`.
+- Automated historical feature configuration and documentation-rate auditing.
+- Implemented structured preprocessing with imputation, missingness indicators, scaling, and categorical encoding.
+- Generated frozen Bio_ClinicalBERT embeddings and reduced text representations using PCA.
+- Tuned class-balanced logistic regression using validation AUPRC.
+- Persisted complete preprocessing and model components as versionable `joblib` artifacts.
+- Developed active-referral scoring and staff-capacity ranking workflows producing timestamped operational outputs.
+- Documented future improvements including shared train/serve feature engineering, model versioning, embedding caching, feature-parity testing, and prospective drift monitoring.
+
+### High-Dimensional Biological Representation Learning
+
+- Developed GMVAE-based representation-learning models for high-dimensional biological datasets.
+- Evaluated latent representations across multiple latent-space dimensions and mixture-component configurations.
+- Used HPC infrastructure for scalable experimentation and reproducible model training.
+
+### Complex Systems Simulation and Mathematical Modeling
+
+- Designed computational experiments for nonlinear and complex-system models.
+- Conducted parameter sweeps across high-dimensional parameter spaces.
+- Analyzed emergent behavior and relationships between model parameters and system dynamics.
+
+## Technical Skills
+
+### Programming and Data Science
+
+- **Python:** pandas, NumPy, SciPy, scikit-learn
+- **SQL:** SQL Server, analytical queries, longitudinal/event-level data extraction
+- **Machine Learning:** logistic regression, classification, clustering, dimensionality reduction, PCA, representation learning, class imbalance, hyperparameter tuning
+- **Deep Learning:** PyTorch, TensorFlow, Keras
+- **Clinical NLP:** Hugging Face Transformers, Bio_ClinicalBERT, tokenization, contextual embeddings, text sanitization, multimodal learning
+- **Model Evaluation:** AUROC, AUPRC, precision, recall, specificity, F-scores, calibration, confusion matrices, Precision@K, Recall@K, Lift@K, NDCG@K
+- **Statistical Modeling:** temporal validation, grouped resampling, missing-data preprocessing, probability calibration, hierarchical smoothing
+
+### Mathematical and Computational Methods
+
+- Applied mathematics
+- Numerical and computational modeling
+- Nonlinear and complex systems
+- High-dimensional data analysis
+- Optimization
+- Simulation
+- Representation learning
+- Mathematical foundations of machine learning
+
+### Computing and Infrastructure
+
+- Linux
+- Windows
+- macOS
+- High-performance computing
+- Batch scheduling and resource management
+- Python virtual environments
+- SQLAlchemy
+- ODBC / SQL Server connectivity
+
+### Software Engineering and Reproducibility
+
+- Git / GitHub
+- Modular Python repositories
+- Configuration-driven pipelines
+- Model artifact persistence
+- Train/validation/test separation
+- Temporal model evaluation
+- Reproducible experiments
+- Technical documentation
+- Quarto / Markdown
+- LaTeX / Beamer
+
+### Visualization and Communication
+
+- Matplotlib
+- Statistical and machine-learning visualization
+- Technical reports
+- Scientific presentations
+- Stakeholder communication
+- Mathematical and technical instruction
+
+## Research Interests
+
+- Machine learning and artificial intelligence
+- Mathematical foundations of neural networks
+- Representation learning
+- Nonlinear and complex systems
+- Neural-network dynamics
+- High-dimensional data analysis
+- Clinical and biomedical machine learning
+- Multimodal learning
+- Applied probability and statistical learning
+- Scientific computing
+
+## Presentations
+
+### Donor Alliance Data Science Internship Final Presentation
+**Predicting Near-Term Onsite Involvement and Prioritizing Active Referrals** | 2026
+
+Presented the development and evaluation of historical-demand baselines, structured and clinical-text machine learning models, multimodal ClinicalBERT, probability calibration, and capacity-aware referral ranking for staff-distribution decision support.
+
+### Bruins in Genomics Symposium
+**UCLA Research Presentation** | University of California, Los Angeles
+
+Presented machine learning research involving high-dimensional biological data and representation learning to an audience of more than 100 researchers.
+
+## Selected Technical Competencies
+
+`Python` · `SQL` · `scikit-learn` · `PyTorch` · `TensorFlow` · `Keras` · `Hugging Face Transformers` · `Bio_ClinicalBERT` · `pandas` · `NumPy` · `SciPy` · `PCA` · `Logistic Regression` · `Clinical NLP` · `Multimodal Learning` · `Machine Learning Evaluation` · `HPC` · `Linux` · `Git` · `LaTeX` · `Quarto`
