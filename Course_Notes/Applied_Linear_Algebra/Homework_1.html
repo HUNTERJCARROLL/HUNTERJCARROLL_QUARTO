@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>module_1 – Hunter Carroll</title>
+<title>homework_1 – Hunter Carroll</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -78,35 +78,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -304,11 +275,11 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-course-work">    
         <li>
-    <a class="dropdown-item" href="../../Course_Notes/Applied_Linear_Algebra/Module_1.html">
+    <a class="dropdown-item" href="../../Course_Notes/Applied_Linear_Algebra/Homework_1.html">
  <span class="dropdown-text">Applied Linear Algebra</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../Course_Notes/Numerical_Analysis/Module_1.html">
+    <a class="dropdown-item" href="../../Course_Notes/Numerical_Analysis/Homework_1.html">
  <span class="dropdown-text">Numerical Analysis</span></a>
   </li>  
     </ul>
@@ -358,6 +329,17 @@ window.Quarto = {
   <ul>
   <li><a href="#applied-linear-algebra-fall-2026---university-of-colorado-denver" id="toc-applied-linear-algebra-fall-2026---university-of-colorado-denver" class="nav-link active" data-scroll-target="#applied-linear-algebra-fall-2026---university-of-colorado-denver">Applied Linear Algebra Fall 2026 - University of Colorado Denver</a></li>
   <li><a href="#module-1---vector-spaces" id="toc-module-1---vector-spaces" class="nav-link" data-scroll-target="#module-1---vector-spaces">Module 1 - Vector Spaces</a></li>
+  <li><a href="#applied-linear-algebra-homework-1" id="toc-applied-linear-algebra-homework-1" class="nav-link" data-scroll-target="#applied-linear-algebra-homework-1">Applied Linear Algebra — Homework #1</a>
+  <ul class="collapse">
+  <li><a href="#problem-1-20-points" id="toc-problem-1-20-points" class="nav-link" data-scroll-target="#problem-1-20-points">Problem 1 (20 points)</a>
+  <ul class="collapse">
+  <li><a href="#solution" id="toc-solution" class="nav-link" data-scroll-target="#solution">Solution</a></li>
+  </ul></li>
+  <li><a href="#problem-2" id="toc-problem-2" class="nav-link" data-scroll-target="#problem-2">Problem 2</a>
+  <ul class="collapse">
+  <li><a href="#solution-1" id="toc-solution-1" class="nav-link" data-scroll-target="#solution-1">Solution</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -373,9 +355,127 @@ window.Quarto = {
 </section>
 <section id="module-1---vector-spaces" class="level1">
 <h1>Module 1 - Vector Spaces</h1>
-<p>Let <span class="math inline">\(\mathbb{F}\)</span> be a set of scalars</p>
+</section>
+<section id="applied-linear-algebra-homework-1" class="level1">
+<h1>Applied Linear Algebra — Homework #1</h1>
+<p>Hunter Carroll</p>
+<section id="problem-1-20-points" class="level2">
+<h2 class="anchored" data-anchor-id="problem-1-20-points">Problem 1 (20 points)</h2>
+<p>Let \(a \), where \(|a|\) denotes the magnitude of \(a\).</p>
+<ol type="a">
+<li>Prove that</li>
+</ol>
+<p>\[ a=|a|^2 \]</p>
+<p>where \(\) denotes the complex conjugate of \(a\).</p>
+<ol start="2" type="a">
+<li>Using part (a), prove that for any \(a,b\),</li>
+</ol>
+<p>\[ |ab|=|a||b| \]</p>
+<section id="solution" class="level3">
+<h3 class="anchored" data-anchor-id="solution">Solution</h3>
+<section id="part-a" class="level4">
+<h4 class="anchored" data-anchor-id="part-a">Part (a)</h4>
+<p>Proof.</p>
+<p>Let \(a\), where \(|a|\) denotes the magnitude of \(a\). We can write \(a=c+di\), where \(c,d\).</p>
+<p>The magnitude of \(a\) is</p>
+<p>\[ |a|=|c+di|= \]</p>
+<p>and therefore,</p>
+<p>\[ |a|<sup>2=(\sqrt{c</sup>2+d<sup>2})</sup>2=c<sup>2+d</sup>2 \]</p>
+<p>The complex conjugate of \(a\) is defined to be \(c-di\). Thus,</p>
+<p>\[ ]</p>
+<p>Therefore, for any arbitrarily chosen \(a\), we have shown that</p>
+<p>\[ \]</p>
+</section>
+<section id="part-b" class="level4">
+<h4 class="anchored" data-anchor-id="part-b">Part (b)</h4>
+<p>Proof.</p>
+<p>Let \(a,b\). From part (a), we established that for any \(a\),</p>
+<p>\[ a=|a|^2 \]</p>
+<p>We also use the commutativity of complex multiplication and the conjugation property</p>
+<p>\[ =\, \]</p>
+<p>Then,</p>
+<p>\[ ]</p>
+<p>Taking the nonnegative square root of both sides gives</p>
+<p>\[ \]</p>
+<p>as desired.</p>
+</section>
+</section>
+</section>
+<section id="problem-2" class="level2">
+<h2 class="anchored" data-anchor-id="problem-2">Problem 2</h2>
+<p>Suppose a function \(f\) satisfies</p>
+<p>\[ f(x)=c_1x^2+c_2x+c_3 \]</p>
+<p>for all \(x\), where \(c_1,c_2,c_3\).</p>
+<p>You are given</p>
+<p>\[ f(1)=4,f(2)=9,f(3)=16 \]</p>
+<ol type="a">
+<li><p>Write down the system of linear equations in \(c_1,c_2,c_3\) implied by these conditions.</p></li>
+<li><p>Represent this system as an augmented matrix.</p></li>
+<li><p>Use reduced row echelon form to solve for \(c_1,c_2,c_3\).</p></li>
+<li><p>Write the explicit formula for \(f(x)\).</p></li>
+</ol>
+<section id="solution-1" class="level3">
+<h3 class="anchored" data-anchor-id="solution-1">Solution</h3>
+<section id="part-a-system-of-linear-equations" class="level4">
+<h4 class="anchored" data-anchor-id="part-a-system-of-linear-equations">Part (a): System of Linear Equations</h4>
+<p>Substituting the given values,</p>
+<p>\[ ]</p>
+<p>This gives the system</p>
+<p>\[ \]</p>
+</section>
+<section id="part-b-augmented-matrix" class="level4">
+<h4 class="anchored" data-anchor-id="part-b-augmented-matrix">Part (b): Augmented Matrix</h4>
+<p>The corresponding augmented matrix is</p>
+<p>\[ \]</p>
+</section>
+<section id="part-c-reduced-row-echelon-form" class="level4">
+<h4 class="anchored" data-anchor-id="part-c-reduced-row-echelon-form">Part (c): Reduced Row Echelon Form</h4>
+<p>We perform the following elementary row operations:</p>
+<ol type="1">
+<li>\(R_2R_2-4R_1\)</li>
+<li>\(R_3R_3-9R_1\)</li>
+<li>\(R_3R_3-3R_2\)</li>
+<li>\(R_2-12R_2\)</li>
+<li>\(R_2R_2-32R_3\)</li>
+<li>\(R_1R_1-R_2\)</li>
+<li>\(R_1R_1-R_3\)</li>
+</ol>
+<p>Step 1: Apply \(R_2R_2-4R_1\).</p>
+<p>\[ ( ]</p>
+<p>Step 2: Apply \(R_3R_3-9R_1\).</p>
+<p>\[ ( ]</p>
+<p>Step 3: Apply \(R_3R_3-3R_2\).</p>
+<p>\[ ( ]</p>
+<p>Step 4: Apply \(R_2-12R_2\).</p>
+<p>\[ ( ]</p>
+<p>Step 5: Apply \(R_2R_2-32R_3\).</p>
+<p>\[ ( ]</p>
+<p>Step 6: Apply \(R_1R_1-R_2\).</p>
+<p>\[ ( ]</p>
+<p>Step 7: Apply \(R_1R_1-R_3\).</p>
+<p>\[ ( ]</p>
+<p>We arrive at the reduced row echelon matrix</p>
+<p>\[ \]</p>
+<p>Therefore,</p>
+<p>\[ \]</p>
+</section>
+<section id="part-d-explicit-formula" class="level4">
+<h4 class="anchored" data-anchor-id="part-d-explicit-formula">Part (d): Explicit Formula</h4>
+<p>Substituting the coefficients into the original expression,</p>
+<p>\[ f(x)=c_1x^2+c_2x+c_3 \]</p>
+<p>we obtain</p>
+<p>\[ \]</p>
+<p>Equivalently,</p>
+<p>\[ f(x)=(x+1)^2 \]</p>
+<p>Verification:</p>
+<p>Checking all three given points,</p>
+<p>\[ ]</p>
+<p>All three conditions are satisfied.</p>
 
 
+</section>
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
