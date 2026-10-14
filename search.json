@@ -1,31 +1,24 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Hunter Carroll",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Email\n  \n  \n    \n     GitHub\n  \n  \n    \n     LinkedIn\n  \n\n  \n  \nMy name is Hunter Carroll, and I am a Ph.D. student in Applied Mathematics at the University of Colorado Denver.\n\n\nI am currently pursuing my Ph.D. in Applied Mathematics at the University of Colorado Denver, with research interests spanning applied analysis, linear algebra, and computational methods.\n\n\n\nI am completing a data science internship at Donor Alliance, an organ and tissue donation organization, where I work on clinical NLP pipelines and predictive modeling for organ procurement referrals. I also teach MATH 1110 (College Algebra Recitation) at CU Denver."
+    "text": "About this site"
   },
   {
-    "objectID": "index.html#education",
-    "href": "index.html#education",
-    "title": "Hunter Carroll",
+    "objectID": "teaching/MATH1110.html",
+    "href": "teaching/MATH1110.html",
+    "title": "MATH 1110 - R03 and R04 (College Algebra Recitation)",
     "section": "",
-    "text": "I am currently pursuing my Ph.D. in Applied Mathematics at the University of Colorado Denver, with research interests spanning applied analysis, linear algebra, and computational methods."
+    "text": "MATH 1110 - R03 and R04 (College Algebra Recitation)\n\n\nWeek 1:\nWeek 1 Overview: This week we will be working on problems related to factoring and the quadratic equation.\nResources:\n\nRecitation Slides (PDF)\nFactoring Review Tactivity\nReview Factoring Two Truths and a Lie\nScaffolded Tactivity for Solving Quadratic Equations\nSection 1.3 Guided Notes with Famous Mathematician"
   },
   {
-    "objectID": "index.html#current-work",
-    "href": "index.html#current-work",
-    "title": "Hunter Carroll",
+    "objectID": "Course_Notes/Applied_Linear_Algebra/Module_1.html",
+    "href": "Course_Notes/Applied_Linear_Algebra/Module_1.html",
+    "title": "Applied Linear Algebra Fall 2026 - University of Colorado Denver",
     "section": "",
-    "text": "I am completing a data science internship at Donor Alliance, an organ and tissue donation organization, where I work on clinical NLP pipelines and predictive modeling for organ procurement referrals. I also teach MATH 1110 (College Algebra Recitation) at CU Denver."
-  },
-  {
-    "objectID": "Course_Notes/Numerical_Analysis/Module_1.html",
-    "href": "Course_Notes/Numerical_Analysis/Module_1.html",
-    "title": "Lecture 2",
-    "section": "",
-    "text": "Lecture 2"
+    "text": "Applied Linear Algebra Fall 2026 - University of Colorado Denver\n\n\nModule 1 - Vector Spaces\nLet \\(\\mathbb{F}\\) be a set of scalars"
   },
   {
     "objectID": "cv.html",
@@ -91,24 +84,31 @@
     "text": "Python · SQL · scikit-learn · PyTorch · TensorFlow · Keras · Hugging Face Transformers · Bio_ClinicalBERT · pandas · NumPy · SciPy · PCA · Logistic Regression · Clinical NLP · Multimodal Learning · Machine Learning Evaluation · HPC · Linux · Git · LaTeX · Quarto"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Hunter Carroll",
     "section": "",
-    "text": "About this site"
+    "text": "Email\n  \n  \n    \n     GitHub\n  \n  \n    \n     LinkedIn\n  \n\n  \n  \nMy name is Hunter Carroll, and I am a Ph.D. student in Applied Mathematics at the University of Colorado Denver.\n\n\nI am currently pursuing my Ph.D. in Applied Mathematics at the University of Colorado Denver, with research interests spanning applied analysis, linear algebra, and computational methods.\n\n\n\nI am completing a data science internship at Donor Alliance, an organ and tissue donation organization, where I work on clinical NLP pipelines and predictive modeling for organ procurement referrals. I also teach MATH 1110 (College Algebra Recitation) at CU Denver."
   },
   {
-    "objectID": "Course_Notes/Applied_Linear_Algebra/Module_1.html",
-    "href": "Course_Notes/Applied_Linear_Algebra/Module_1.html",
-    "title": "Applied Linear Algebra Fall 2026 - University of Colorado Denver",
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Hunter Carroll",
     "section": "",
-    "text": "Applied Linear Algebra Fall 2026 - University of Colorado Denver\nThis is a prelim prep course.\n\n\nModule 1\nIn the first portion of the semester we are covering vector spaces."
+    "text": "I am currently pursuing my Ph.D. in Applied Mathematics at the University of Colorado Denver, with research interests spanning applied analysis, linear algebra, and computational methods."
   },
   {
-    "objectID": "teaching/MATH1110.html",
-    "href": "teaching/MATH1110.html",
-    "title": "MATH 1110 - R03 and R04 (College Algebra Recitation)",
+    "objectID": "index.html#current-work",
+    "href": "index.html#current-work",
+    "title": "Hunter Carroll",
     "section": "",
-    "text": "MATH 1110 - R03 and R04 (College Algebra Recitation)\n\n\nWeek 1:\nWeek 1 Overview: This week we will be working on problems related to factoring and the quadratic equation.\nResources:\n\nRecitation Slides (PDF)\nFactoring Review Tactivity\nReview Factoring Two Truths and a Lie\nScaffolded Tactivity for Solving Quadratic Equations\nSection 1.3 Guided Notes with Famous Mathematician"
+    "text": "I am completing a data science internship at Donor Alliance, an organ and tissue donation organization, where I work on clinical NLP pipelines and predictive modeling for organ procurement referrals. I also teach MATH 1110 (College Algebra Recitation) at CU Denver."
+  },
+  {
+    "objectID": "Course_Notes/Numerical_Analysis/Module_1.html",
+    "href": "Course_Notes/Numerical_Analysis/Module_1.html",
+    "title": "Lecture 2",
+    "section": "",
+    "text": "Lecture 2"
   }
 ]
