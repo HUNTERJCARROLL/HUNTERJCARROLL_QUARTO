@@ -1,7 +1,5 @@
 # Applied Linear Algebra Fall 2026 - University of Colorado Denver
 
-This is a prelim prep course. 
+# Module 1 - Vector Spaces
 
-# Module 1
-
-In the first portion of the semester we are covering vector spaces. 
+Let $\mathbb{F}$ be a set of scalars
