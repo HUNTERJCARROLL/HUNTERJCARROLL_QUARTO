@@ -78,6 +78,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -327,9 +356,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#applied-linear-algebra-fall-2026---university-of-colorado-denver" id="toc-applied-linear-algebra-fall-2026---university-of-colorado-denver" class="nav-link active" data-scroll-target="#applied-linear-algebra-fall-2026---university-of-colorado-denver">Applied Linear Algebra Fall 2026 - University of Colorado Denver</a></li>
-  <li><a href="#module-1---vector-spaces" id="toc-module-1---vector-spaces" class="nav-link" data-scroll-target="#module-1---vector-spaces">Module 1 - Vector Spaces</a></li>
-  <li><a href="#applied-linear-algebra-homework-1" id="toc-applied-linear-algebra-homework-1" class="nav-link" data-scroll-target="#applied-linear-algebra-homework-1">Applied Linear Algebra — Homework #1</a>
+  <li><a href="#applied-linear-algebra-homework-1" id="toc-applied-linear-algebra-homework-1" class="nav-link active" data-scroll-target="#applied-linear-algebra-homework-1">Applied Linear Algebra — Homework #1</a>
   <ul class="collapse">
   <li><a href="#problem-1-20-points" id="toc-problem-1-20-points" class="nav-link" data-scroll-target="#problem-1-20-points">Problem 1 (20 points)</a>
   <ul class="collapse">
@@ -350,126 +377,264 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="applied-linear-algebra-fall-2026---university-of-colorado-denver" class="level1">
-<h1>Applied Linear Algebra Fall 2026 - University of Colorado Denver</h1>
-</section>
-<section id="module-1---vector-spaces" class="level1">
-<h1>Module 1 - Vector Spaces</h1>
-</section>
 <section id="applied-linear-algebra-homework-1" class="level1">
 <h1>Applied Linear Algebra — Homework #1</h1>
-<p>Hunter Carroll</p>
+<p><strong>Hunter Carroll</strong></p>
+<hr>
 <section id="problem-1-20-points" class="level2">
 <h2 class="anchored" data-anchor-id="problem-1-20-points">Problem 1 (20 points)</h2>
-<p>Let \(a \), where \(|a|\) denotes the magnitude of \(a\).</p>
-<ol type="a">
-<li>Prove that</li>
-</ol>
-<p>\[ a=|a|^2 \]</p>
-<p>where \(\) denotes the complex conjugate of \(a\).</p>
-<ol start="2" type="a">
-<li>Using part (a), prove that for any \(a,b\),</li>
-</ol>
-<p>\[ |ab|=|a||b| \]</p>
+<p>Let <span class="math inline">\(a \in \mathbb{C}\)</span>, where <span class="math inline">\(|a|\)</span> denotes the magnitude of <span class="math inline">\(a\)</span>.</p>
+<p><strong>(a)</strong> Prove that</p>
+<p><span class="math display">\[
+a\overline{a}=|a|^2
+\]</span></p>
+<p>where <span class="math inline">\(\overline{a}\)</span> denotes the complex conjugate of <span class="math inline">\(a\)</span>.</p>
+<p><strong>(b)</strong> Using part (a), prove that for any <span class="math inline">\(a,b\in\mathbb{C}\)</span>,</p>
+<p><span class="math display">\[
+|ab|=|a||b|
+\]</span></p>
 <section id="solution" class="level3">
 <h3 class="anchored" data-anchor-id="solution">Solution</h3>
 <section id="part-a" class="level4">
 <h4 class="anchored" data-anchor-id="part-a">Part (a)</h4>
-<p>Proof.</p>
-<p>Let \(a\), where \(|a|\) denotes the magnitude of \(a\). We can write \(a=c+di\), where \(c,d\).</p>
-<p>The magnitude of \(a\) is</p>
-<p>\[ |a|=|c+di|= \]</p>
+<p><strong>Proof.</strong></p>
+<p>Let <span class="math inline">\(a\in\mathbb{C}\)</span>, where <span class="math inline">\(|a|\)</span> denotes the magnitude of <span class="math inline">\(a\)</span>. We can write <span class="math inline">\(a=c+di\)</span>, where <span class="math inline">\(c,d\in\mathbb{R}\)</span>.</p>
+<p>The magnitude of <span class="math inline">\(a\)</span> is</p>
+<p><span class="math display">\[
+|a|=|c+di|=\sqrt{c^2+d^2}
+\]</span></p>
 <p>and therefore,</p>
-<p>\[ |a|<sup>2=(\sqrt{c</sup>2+d<sup>2})</sup>2=c<sup>2+d</sup>2 \]</p>
-<p>The complex conjugate of \(a\) is defined to be \(c-di\). Thus,</p>
-<p>\[ ]</p>
-<p>Therefore, for any arbitrarily chosen \(a\), we have shown that</p>
-<p>\[ \]</p>
+<p><span class="math display">\[
+|a|^2=(\sqrt{c^2+d^2})^2=c^2+d^2
+\]</span></p>
+<p>The complex conjugate of <span class="math inline">\(a\)</span> is defined to be <span class="math inline">\(c-di\)</span>. Thus,</p>
+<p><span class="math display">\[
+\begin{aligned}
+a\overline{a}
+&amp;=(c+di)(c-di)\\
+&amp;=c^2-(cd)i+(cd)i-d^2i^2\\
+&amp;=c^2+d^2\\
+&amp;=|a|^2
+\end{aligned}
+\]</span></p>
+<p>Therefore, for any arbitrarily chosen <span class="math inline">\(a\in\mathbb{C}\)</span>, we have shown that</p>
+<p><span class="math display">\[
+\boxed{a\overline{a}=|a|^2}
+\]</span></p>
 </section>
 <section id="part-b" class="level4">
 <h4 class="anchored" data-anchor-id="part-b">Part (b)</h4>
-<p>Proof.</p>
-<p>Let \(a,b\). From part (a), we established that for any \(a\),</p>
-<p>\[ a=|a|^2 \]</p>
+<p><strong>Proof.</strong></p>
+<p>Let <span class="math inline">\(a,b\in\mathbb{C}\)</span>. From part (a), we established that for any <span class="math inline">\(a\in\mathbb{C}\)</span>,</p>
+<p><span class="math display">\[
+a\overline{a}=|a|^2
+\]</span></p>
 <p>We also use the commutativity of complex multiplication and the conjugation property</p>
-<p>\[ =\, \]</p>
+<p><span class="math display">\[
+\overline{ab}=\overline{a}\,\overline{b}
+\]</span></p>
 <p>Then,</p>
-<p>\[ ]</p>
+<p><span class="math display">\[
+\begin{aligned}
+|ab|^2
+&amp;=ab\cdot\overline{ab}\\
+&amp;=ab\cdot\overline{a}\,\overline{b}\\
+&amp;=a\overline{a}\cdot b\overline{b}\\
+&amp;=|a|^2|b|^2
+\end{aligned}
+\]</span></p>
 <p>Taking the nonnegative square root of both sides gives</p>
-<p>\[ \]</p>
+<p><span class="math display">\[
+\boxed{|ab|=|a||b|}
+\]</span></p>
 <p>as desired.</p>
+<hr>
 </section>
 </section>
 </section>
 <section id="problem-2" class="level2">
 <h2 class="anchored" data-anchor-id="problem-2">Problem 2</h2>
-<p>Suppose a function \(f\) satisfies</p>
-<p>\[ f(x)=c_1x^2+c_2x+c_3 \]</p>
-<p>for all \(x\), where \(c_1,c_2,c_3\).</p>
+<p>Suppose a function <span class="math inline">\(f\)</span> satisfies</p>
+<p><span class="math display">\[
+f(x)=c_1x^2+c_2x+c_3
+\]</span></p>
+<p>for all <span class="math inline">\(x\)</span>, where <span class="math inline">\(c_1,c_2,c_3\in\mathbb{R}\)</span>.</p>
 <p>You are given</p>
-<p>\[ f(1)=4,f(2)=9,f(3)=16 \]</p>
-<ol type="a">
-<li><p>Write down the system of linear equations in \(c_1,c_2,c_3\) implied by these conditions.</p></li>
-<li><p>Represent this system as an augmented matrix.</p></li>
-<li><p>Use reduced row echelon form to solve for \(c_1,c_2,c_3\).</p></li>
-<li><p>Write the explicit formula for \(f(x)\).</p></li>
-</ol>
+<p><span class="math display">\[
+f(1)=4,\qquad f(2)=9,\qquad f(3)=16
+\]</span></p>
+<p><strong>(a)</strong> Write down the system of linear equations in <span class="math inline">\(c_1,c_2,c_3\)</span> implied by these conditions.</p>
+<p><strong>(b)</strong> Represent this system as an augmented matrix.</p>
+<p><strong>(c)</strong> Use reduced row echelon form to solve for <span class="math inline">\(c_1,c_2,c_3\)</span>.</p>
+<p><strong>(d)</strong> Write the explicit formula for <span class="math inline">\(f(x)\)</span>.</p>
 <section id="solution-1" class="level3">
 <h3 class="anchored" data-anchor-id="solution-1">Solution</h3>
 <section id="part-a-system-of-linear-equations" class="level4">
 <h4 class="anchored" data-anchor-id="part-a-system-of-linear-equations">Part (a): System of Linear Equations</h4>
 <p>Substituting the given values,</p>
-<p>\[ ]</p>
+<p><span class="math display">\[
+\begin{aligned}
+f(1)&amp;=c_1(1)^2+c_2(1)+c_3=4\\
+f(2)&amp;=c_1(2)^2+c_2(2)+c_3=9\\
+f(3)&amp;=c_1(3)^2+c_2(3)+c_3=16
+\end{aligned}
+\]</span></p>
 <p>This gives the system</p>
-<p>\[ \]</p>
+<p><span class="math display">\[
+\boxed{
+\begin{aligned}
+c_1+c_2+c_3&amp;=4\\
+4c_1+2c_2+c_3&amp;=9\\
+9c_1+3c_2+c_3&amp;=16
+\end{aligned}
+}
+\]</span></p>
 </section>
 <section id="part-b-augmented-matrix" class="level4">
 <h4 class="anchored" data-anchor-id="part-b-augmented-matrix">Part (b): Augmented Matrix</h4>
 <p>The corresponding augmented matrix is</p>
-<p>\[ \]</p>
+<p><span class="math display">\[
+\boxed{
+\left(
+\begin{array}{ccc|c}
+1&amp;1&amp;1&amp;4\\
+4&amp;2&amp;1&amp;9\\
+9&amp;3&amp;1&amp;16
+\end{array}
+\right)
+}
+\]</span></p>
 </section>
 <section id="part-c-reduced-row-echelon-form" class="level4">
 <h4 class="anchored" data-anchor-id="part-c-reduced-row-echelon-form">Part (c): Reduced Row Echelon Form</h4>
 <p>We perform the following elementary row operations:</p>
 <ol type="1">
-<li>\(R_2R_2-4R_1\)</li>
-<li>\(R_3R_3-9R_1\)</li>
-<li>\(R_3R_3-3R_2\)</li>
-<li>\(R_2-12R_2\)</li>
-<li>\(R_2R_2-32R_3\)</li>
-<li>\(R_1R_1-R_2\)</li>
-<li>\(R_1R_1-R_3\)</li>
+<li><span class="math inline">\(R_2\rightarrow R_2-4R_1\)</span></li>
+<li><span class="math inline">\(R_3\rightarrow R_3-9R_1\)</span></li>
+<li><span class="math inline">\(R_3\rightarrow R_3-3R_2\)</span></li>
+<li><span class="math inline">\(R_2\rightarrow-\frac12R_2\)</span></li>
+<li><span class="math inline">\(R_2\rightarrow R_2-\frac32R_3\)</span></li>
+<li><span class="math inline">\(R_1\rightarrow R_1-R_2\)</span></li>
+<li><span class="math inline">\(R_1\rightarrow R_1-R_3\)</span></li>
 </ol>
-<p>Step 1: Apply \(R_2R_2-4R_1\).</p>
-<p>\[ ( ]</p>
-<p>Step 2: Apply \(R_3R_3-9R_1\).</p>
-<p>\[ ( ]</p>
-<p>Step 3: Apply \(R_3R_3-3R_2\).</p>
-<p>\[ ( ]</p>
-<p>Step 4: Apply \(R_2-12R_2\).</p>
-<p>\[ ( ]</p>
-<p>Step 5: Apply \(R_2R_2-32R_3\).</p>
-<p>\[ ( ]</p>
-<p>Step 6: Apply \(R_1R_1-R_2\).</p>
-<p>\[ ( ]</p>
-<p>Step 7: Apply \(R_1R_1-R_3\).</p>
-<p>\[ ( ]</p>
+<p><strong>Step 1:</strong> Apply <span class="math inline">\(R_2\rightarrow R_2-4R_1\)</span>.</p>
+<p><span class="math display">\[
+\left(
+\begin{array}{ccc|c}
+1&amp;1&amp;1&amp;4\\
+4&amp;2&amp;1&amp;9\\
+9&amp;3&amp;1&amp;16
+\end{array}
+\right)
+\longrightarrow
+\left(
+\begin{array}{ccc|c}
+1&amp;1&amp;1&amp;4\\
+0&amp;-2&amp;-3&amp;-7\\
+9&amp;3&amp;1&amp;16
+\end{array}
+\right)
+\]</span></p>
+<p><strong>Step 2:</strong> Apply <span class="math inline">\(R_3\rightarrow R_3-9R_1\)</span>.</p>
+<p><span class="math display">\[
+\left(
+\begin{array}{ccc|c}
+1&amp;1&amp;1&amp;4\\
+0&amp;-2&amp;-3&amp;-7\\
+0&amp;-6&amp;-8&amp;-20
+\end{array}
+\right)
+\]</span></p>
+<p><strong>Step 3:</strong> Apply <span class="math inline">\(R_3\rightarrow R_3-3R_2\)</span>.</p>
+<p><span class="math display">\[
+\left(
+\begin{array}{ccc|c}
+1&amp;1&amp;1&amp;4\\
+0&amp;-2&amp;-3&amp;-7\\
+0&amp;0&amp;1&amp;1
+\end{array}
+\right)
+\]</span></p>
+<p><strong>Step 4:</strong> Apply <span class="math inline">\(R_2\rightarrow-\frac12R_2\)</span>.</p>
+<p><span class="math display">\[
+\left(
+\begin{array}{ccc|c}
+1&amp;1&amp;1&amp;4\\
+0&amp;1&amp;\frac32&amp;\frac72\\
+0&amp;0&amp;1&amp;1
+\end{array}
+\right)
+\]</span></p>
+<p><strong>Step 5:</strong> Apply <span class="math inline">\(R_2\rightarrow R_2-\frac32R_3\)</span>.</p>
+<p><span class="math display">\[
+\left(
+\begin{array}{ccc|c}
+1&amp;1&amp;1&amp;4\\
+0&amp;1&amp;0&amp;2\\
+0&amp;0&amp;1&amp;1
+\end{array}
+\right)
+\]</span></p>
+<p><strong>Step 6:</strong> Apply <span class="math inline">\(R_1\rightarrow R_1-R_2\)</span>.</p>
+<p><span class="math display">\[
+\left(
+\begin{array}{ccc|c}
+1&amp;0&amp;1&amp;2\\
+0&amp;1&amp;0&amp;2\\
+0&amp;0&amp;1&amp;1
+\end{array}
+\right)
+\]</span></p>
+<p><strong>Step 7:</strong> Apply <span class="math inline">\(R_1\rightarrow R_1-R_3\)</span>.</p>
+<p><span class="math display">\[
+\left(
+\begin{array}{ccc|c}
+1&amp;0&amp;0&amp;1\\
+0&amp;1&amp;0&amp;2\\
+0&amp;0&amp;1&amp;1
+\end{array}
+\right)
+\]</span></p>
 <p>We arrive at the reduced row echelon matrix</p>
-<p>\[ \]</p>
+<p><span class="math display">\[
+\boxed{
+\left(
+\begin{array}{ccc|c}
+1&amp;0&amp;0&amp;1\\
+0&amp;1&amp;0&amp;2\\
+0&amp;0&amp;1&amp;1
+\end{array}
+\right)
+}
+\]</span></p>
 <p>Therefore,</p>
-<p>\[ \]</p>
+<p><span class="math display">\[
+\boxed{c_1=1,\qquad c_2=2,\qquad c_3=1}
+\]</span></p>
 </section>
 <section id="part-d-explicit-formula" class="level4">
 <h4 class="anchored" data-anchor-id="part-d-explicit-formula">Part (d): Explicit Formula</h4>
 <p>Substituting the coefficients into the original expression,</p>
-<p>\[ f(x)=c_1x^2+c_2x+c_3 \]</p>
+<p><span class="math display">\[
+f(x)=c_1x^2+c_2x+c_3
+\]</span></p>
 <p>we obtain</p>
-<p>\[ \]</p>
+<p><span class="math display">\[
+\boxed{f(x)=x^2+2x+1}
+\]</span></p>
 <p>Equivalently,</p>
-<p>\[ f(x)=(x+1)^2 \]</p>
-<p>Verification:</p>
+<p><span class="math display">\[
+f(x)=(x+1)^2
+\]</span></p>
+<p><strong>Verification:</strong></p>
 <p>Checking all three given points,</p>
-<p>\[ ]</p>
+<p><span class="math display">\[
+\begin{aligned}
+f(1)&amp;=1^2+2(1)+1=4\\
+f(2)&amp;=2^2+2(2)+1=9\\
+f(3)&amp;=3^2+2(3)+1=16
+\end{aligned}
+\]</span></p>
 <p>All three conditions are satisfied.</p>
 
 
