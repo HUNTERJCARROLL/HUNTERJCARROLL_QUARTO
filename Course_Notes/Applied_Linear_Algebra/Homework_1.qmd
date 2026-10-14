@@ -1,0 +1,175 @@
+# Applied Linear Algebra Fall 2026 - University of Colorado Denver
+
+# Module 1 - Vector Spaces
+
+# Applied Linear Algebra — Homework #1
+
+Hunter Carroll
+
+## Problem 1 (20 points)
+
+Let \\(a \in \mathbb{C}\\), where \\(|a|\\) denotes the magnitude of \\(a\\).
+
+(a) Prove that
+
+\\[ a\overline{a}=|a|^2 \\]
+
+where \\(\overline{a}\\) denotes the complex conjugate of \\(a\\).
+
+(b) Using part (a), prove that for any \\(a,b\in\mathbb{C}\\),
+
+\\[ |ab|=|a||b| \\]
+
+### Solution
+
+#### Part (a)
+
+Proof.
+
+Let \\(a\in\mathbb{C}\\), where \\(|a|\\) denotes the magnitude of \\(a\\). We can write \\(a=c+di\\), where \\(c,d\in\mathbb{R}\\).
+
+The magnitude of \\(a\\) is
+
+\\[ |a|=|c+di|=\sqrt{c^2+d^2} \\]
+
+and therefore,
+
+\\[ |a|^2=(\sqrt{c^2+d^2})^2=c^2+d^2 \\]
+
+The complex conjugate of \\(a\\) is defined to be \\(c-di\\). Thus,
+
+\\[ \begin{aligned} a\overline{a} &=(c+di)(c-di)\\\ &=c^2-(cd)i+(cd)i-d^2i^2\\\ &=c^2+d^2\\\ &=|a|^2 \end{aligned} \\]
+
+Therefore, for any arbitrarily chosen \\(a\in\mathbb{C}\\), we have shown that
+
+\\[ \boxed{a\overline{a}=|a|^2} \\]
+
+#### Part (b)
+
+Proof.
+
+Let \\(a,b\in\mathbb{C}\\). From part (a), we established that for any \\(a\in\mathbb{C}\\),
+
+\\[ a\overline{a}=|a|^2 \\]
+
+We also use the commutativity of complex multiplication and the conjugation property
+
+\\[ \overline{ab}=\overline{a}\\,\overline{b} \\]
+
+Then,
+
+\\[ \begin{aligned} |ab|^2 &=ab\cdot\overline{ab}\\\ &=ab\cdot\overline{a}\\,\overline{b}\\\ &=a\overline{a}\cdot b\overline{b}\\\ &=|a|^2|b|^2 \end{aligned} \\]
+
+Taking the nonnegative square root of both sides gives
+
+\\[ \boxed{|ab|=|a||b|} \\]
+
+as desired.
+
+## Problem 2
+
+Suppose a function \\(f\\) satisfies
+
+\\[ f(x)=c_1x^2+c_2x+c_3 \\]
+
+for all \\(x\\), where \\(c_1,c_2,c_3\in\mathbb{R}\\).
+
+You are given
+
+\\[ f(1)=4,\qquad f(2)=9,\qquad f(3)=16 \\]
+
+(a) Write down the system of linear equations in \\(c_1,c_2,c_3\\) implied by these conditions.
+
+(b) Represent this system as an augmented matrix.
+
+(c) Use reduced row echelon form to solve for \\(c_1,c_2,c_3\\).
+
+(d) Write the explicit formula for \\(f(x)\\).
+
+### Solution
+
+#### Part (a): System of Linear Equations
+
+Substituting the given values,
+
+\\[ \begin{aligned} f(1)&=c_1(1)^2+c_2(1)+c_3=4\\\ f(2)&=c_1(2)^2+c_2(2)+c_3=9\\\ f(3)&=c_1(3)^2+c_2(3)+c_3=16 \end{aligned} \\]
+
+This gives the system
+
+\\[ \boxed{ \begin{aligned} c_1+c_2+c_3&=4\\\ 4c_1+2c_2+c_3&=9\\\ 9c_1+3c_2+c_3&=16 \end{aligned} } \\]
+
+#### Part (b): Augmented Matrix
+
+The corresponding augmented matrix is
+
+\\[ \boxed{ \left( \begin{array}{ccc|c} 1&1&1&4\\\ 4&2&1&9\\\ 9&3&1&16 \end{array} \right) } \\]
+
+#### Part (c): Reduced Row Echelon Form
+
+We perform the following elementary row operations:
+
+1. \\(R_2\rightarrow R_2-4R_1\\)
+2. \\(R_3\rightarrow R_3-9R_1\\)
+3. \\(R_3\rightarrow R_3-3R_2\\)
+4. \\(R_2\rightarrow-\frac12R_2\\)
+5. \\(R_2\rightarrow R_2-\frac32R_3\\)
+6. \\(R_1\rightarrow R_1-R_2\\)
+7. \\(R_1\rightarrow R_1-R_3\\)
+
+Step 1: Apply \\(R_2\rightarrow R_2-4R_1\\).
+
+\\[ \left( \begin{array}{ccc|c} 1&1&1&4\\\ 4&2&1&9\\\ 9&3&1&16 \end{array} \right) \longrightarrow \left( \begin{array}{ccc|c} 1&1&1&4\\\ 0&-2&-3&-7\\\ 9&3&1&16 \end{array} \right) \\]
+
+Step 2: Apply \\(R_3\rightarrow R_3-9R_1\\).
+
+\\[ \left( \begin{array}{ccc|c} 1&1&1&4\\\ 0&-2&-3&-7\\\ 0&-6&-8&-20 \end{array} \right) \\]
+
+Step 3: Apply \\(R_3\rightarrow R_3-3R_2\\).
+
+\\[ \left( \begin{array}{ccc|c} 1&1&1&4\\\ 0&-2&-3&-7\\\ 0&0&1&1 \end{array} \right) \\]
+
+Step 4: Apply \\(R_2\rightarrow-\frac12R_2\\).
+
+\\[ \left( \begin{array}{ccc|c} 1&1&1&4\\\ 0&1&\frac32&\frac72\\\ 0&0&1&1 \end{array} \right) \\]
+
+Step 5: Apply \\(R_2\rightarrow R_2-\frac32R_3\\).
+
+\\[ \left( \begin{array}{ccc|c} 1&1&1&4\\\ 0&1&0&2\\\ 0&0&1&1 \end{array} \right) \\]
+
+Step 6: Apply \\(R_1\rightarrow R_1-R_2\\).
+
+\\[ \left( \begin{array}{ccc|c} 1&0&1&2\\\ 0&1&0&2\\\ 0&0&1&1 \end{array} \right) \\]
+
+Step 7: Apply \\(R_1\rightarrow R_1-R_3\\).
+
+\\[ \left( \begin{array}{ccc|c} 1&0&0&1\\\ 0&1&0&2\\\ 0&0&1&1 \end{array} \right) \\]
+
+We arrive at the reduced row echelon matrix
+
+\\[ \boxed{ \left( \begin{array}{ccc|c} 1&0&0&1\\\ 0&1&0&2\\\ 0&0&1&1 \end{array} \right) } \\]
+
+Therefore,
+
+\\[ \boxed{c_1=1,\qquad c_2=2,\qquad c_3=1} \\]
+
+#### Part (d): Explicit Formula
+
+Substituting the coefficients into the original expression,
+
+\\[ f(x)=c_1x^2+c_2x+c_3 \\]
+
+we obtain
+
+\\[ \boxed{f(x)=x^2+2x+1} \\]
+
+Equivalently,
+
+\\[ f(x)=(x+1)^2 \\]
+
+Verification:
+
+Checking all three given points,
+
+\\[ \begin{aligned} f(1)&=1^2+2(1)+1=4\\\ f(2)&=2^2+2(2)+1=9\\\ f(3)&=3^2+2(3)+1=16 \end{aligned} \\]
+
+All three conditions are satisfied.

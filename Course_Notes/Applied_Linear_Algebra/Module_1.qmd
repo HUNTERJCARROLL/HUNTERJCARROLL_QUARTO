@@ -1,5 +1,0 @@
-# Applied Linear Algebra Fall 2026 - University of Colorado Denver
-
-# Module 1 - Vector Spaces
-
-Let $\mathbb{F}$ be a set of scalars

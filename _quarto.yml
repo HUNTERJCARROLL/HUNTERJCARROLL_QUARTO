@@ -12,9 +12,9 @@ website:
         text: Research
       - text: "Course Work"
         menu:
-          - href: Course_Notes/Applied_Linear_Algebra/Module_1.qmd
+          - href: Course_Notes/Applied_Linear_Algebra/Homework_1.qmd
             text: Applied Linear Algebra
-          - href: Course_Notes/Numerical_Analysis/Module_1.qmd
+          - href: Course_Notes/Numerical_Analysis/Homework_1.qmd
             text: Numerical Analysis
       - href: cv.qmd
         text: CV
